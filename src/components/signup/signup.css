@@ -1,0 +1,59 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.signup {
+   display: flex;
+   justify-content: center;
+   background-image: url(./exp2.jpg);
+   background-size: cover;
+   height: 100vh;
+   width: 100vh;
+}
+.signup-form {
+   border: 1px solid #cccccc;
+   padding: 20px;
+   border-radius: 10px;
+   min-height: 45vh;
+   background-color: #cccccc8e;
+}
+.formdiv {
+   width: 40%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.btn {
+   color: antiquewhite !important;
+   position: absolute;
+   left: 30%;
+   transform: translate(-50%, -40%);
+   border: 2px solid blanchedalmond !important;
+   background-color: rgb(90, 110, 128) !important;
+   margin-top: 1rem;
+   width: 100%;
+}
+.btn:hover {
+   background-color: rgb(225, 170, 107) !important;
+}
+.btn2 {
+   position: absolute;
+   left: 70%;
+}
+.s {
+   background-color: aquamarine !important;
+}
+.btn3 {
+   position: absolute;
+   left: 50%;
+}
+.span2 {
+   padding-top: 5px;
+   
+   display: flex;
+   justify-content: center;
+   font-weight: bold;
+}

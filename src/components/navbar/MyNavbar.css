@@ -1,0 +1,191 @@
+
+/* .navbar {
+   background-color: rgba(0, 0, 0, 0.85);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   transition: all 0.3s ease;
+   padding: 0.5rem 1rem;
+ } */
+
+ /* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030; /* Ensure navbar stays above other content */
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  height: 60px; /* Set a fixed height */
+}
+ 
+ .navbar-brand {
+   font-size: 1.8rem;
+   font-weight: bold;
+   color: #ffd700;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   transition: color 0.3s ease;
+ }
+ 
+ .navbar-brand:hover {
+   color: #ffffff;
+   text-decoration: none;
+ }
+ 
+ /* Navbar Links */
+ .navbar .nav-link {
+   color: #ffffff;
+   font-size: 1rem;
+   padding: 0.5rem 1rem;
+   margin: 0 0.25rem;
+   transition: all 0.3s ease;
+   border-radius: 0.25rem;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .navbar .nav-link:hover {
+   color: #ffd700;
+   background-color: rgba(255, 255, 255, 0.1);
+   text-decoration: none;
+ }
+ 
+ /* Active Link Styling */
+ .navbar .nav-link.active {
+   color: #ffd700;
+   font-weight: bold;
+   background-color: rgba(255, 215, 0, 0.1);
+ }
+ 
+ /* Premium Button Styling */
+ .premium-button {
+   color: #ffd700;
+   font-weight: bold;
+   border: 1px solid #ffd700;
+   padding: 0.5rem 1rem;
+   border-radius: 0.25rem;
+   margin: 0 0.5rem;
+   transition: all 0.3s ease;
+ }
+ 
+ .premium-button:hover {
+   background-color: #ffd700;
+   color: #000 !important;
+   text-decoration: none;
+ }
+ 
+ /* Premium Label Styling */
+ .premium-label {
+   color: #ffbf00;
+   font-weight: bold;
+   padding: 0.5rem 1rem;
+   margin: 0 0.5rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+ }
+ 
+ .premium-label:hover {
+   color: #ffbf00 !important;
+   cursor: default;
+ }
+ 
+ .premium-label .fa-crown {
+   color: #ffd700;
+ }
+ 
+ /* Logout Link */
+ .logout-link {
+   color: #ff4d4f !important;
+   font-weight: 500;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 0.5rem 1rem;
+   transition: all 0.3s ease;
+ }
+ 
+ .logout-link:hover {
+   color: #ff1a1d !important;
+   background-color: rgba(255, 77, 79, 0.1);
+   text-decoration: none;
+ }
+ 
+ /* Theme Toggle */
+ .toggle {
+   padding: 0.5rem;
+   margin-right: 0.5rem;
+ }
+ 
+ .toggle svg {
+   cursor: pointer;
+   transition: all 0.3s ease;
+   width: 24px;
+   height: 24px;
+ }
+ 
+ .toggle svg:hover {
+   fill: #ffd700;
+   transform: rotate(20deg);
+ }
+ 
+ /* Mobile Responsiveness */
+ @media (max-width: 768px) {
+   .navbar {
+     padding: 0.75rem;
+   }
+   
+   .navbar .nav-link {
+     padding: 0.75rem;
+     width: 100%;
+     text-align: center;
+     margin: 0.25rem 0;
+   }
+   
+   .premium-button,
+   .premium-label,
+   .logout-link {
+     justify-content: center;
+     margin: 0.25rem 0;
+     width: 100%;
+   }
+ }
+ 
+ /* Dark theme specific styles */
+ .navbar.dark {
+   background-color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ /* Light theme specific styles */
+ .navbar.light {
+   background-color: rgba(205, 224, 222, 0.515);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .navbar.light .nav-link {
+   color: #333;
+ }
+ 
+ .navbar.light .nav-link:hover {
+   color: #d4af37;
+   background-color: rgba(0, 0, 0, 0.05);
+ }
+ 
+ .navbar.light .navbar-brand {
+   color: #d4af37;
+ }
+ 
+ .navbar.light .navbar-brand:hover {
+   color: #000;
+ }
+ 
+ .navbar.light .logout-link {
+   color: #ff4d4f !important;
+ }
+ 
+ .navbar.light .logout-link:hover {
+   color: #ff1a1d !important;
+   background-color: rgba(255, 77, 79, 0.1);
+ }

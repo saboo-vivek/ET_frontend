@@ -1,0 +1,113 @@
+/* .footer {
+   background-color: #333;
+   color: white;
+   padding: 20px 0;
+   width: 100%;
+}
+
+.footer-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-around;
+}
+
+.footer-section {
+   flex: 1;
+   margin-right: 20px;
+}
+
+.footer-section h3 {
+   font-size: 1.2em;
+   margin-bottom: 10px;
+}
+
+.footer-bottom {
+   margin-top: 20px;
+   text-align: center;
+} */
+/* Footer Styling */
+.footer {
+   background-color: #111; /* Darker background for better contrast */
+   color: white;
+   padding: 40px 0;
+   width: 100%;
+   font-family: 'Arial', sans-serif;
+   position: relative;
+   bottom: 0;
+}
+
+/* Footer Content */
+.footer-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap; /* Allows for responsiveness */
+   padding: 0 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+   flex: 1;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   text-align: left;
+}
+
+.footer-section h3 {
+   font-size: 1.4em;
+   margin-bottom: 10px;
+   color: #f1f1f1;
+   font-weight: bold;
+}
+
+.footer-section p {
+   font-size: 1em;
+   margin-bottom: 5px;
+   color: #ddd;
+   line-height: 1.6;
+}
+
+/* Follow Us Section */
+.footer-section .social-links {
+   display: flex;
+   gap: 15px;
+}
+
+.footer-section .social-links a {
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.5em;
+   transition: color 0.3s ease;
+}
+
+.footer-section .social-links a:hover {
+   color: #1da1f2; /* Twitter Blue for hover effect */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+   margin-top: 20px;
+   text-align: center;
+   font-size: 0.9em;
+   color: #bbb;
+}
+
+.footer-bottom p {
+   margin: 0;
+   padding: 10px 0;
+}
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+   .footer-content {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .footer-section {
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
+}

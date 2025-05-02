@@ -1,0 +1,302 @@
+/* Main expense page styling */
+.expensemain {
+   background-image: url("exp9.jpg");
+   background-size: cover;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: white;
+   padding: 2rem;
+}
+
+/* Heading for expenses */
+.expHead {
+   margin: 15px;
+   padding: 1rem;
+   background-color: rgba(135, 134, 132, 0.8);
+   border-radius: 5px;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.8rem;
+   color: #333;
+}
+
+/* Popup form for adding/editing expenses */
+.popform {
+   margin-top: 3rem;
+   width: 80%;
+   max-width: 50rem;
+   border: 1px solid #abbcce;
+   padding: 2rem;
+   background-color: rgba(171, 188, 206, 0.6);
+   border-radius: 13px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popform label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: bold;
+   color: #333;
+}
+
+.popform input,
+.popform select {
+   width: calc(100% - 16px);
+   padding: 10px;
+   margin-bottom: 12px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   background-color: #f9f9f9;
+   box-sizing: border-box;
+}
+
+.popform button {
+   width: calc(100% - 16px);
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #007bff;
+   color: #fff;
+   font-size: 1.2rem;
+   cursor: pointer;
+}
+
+.popform button:hover {
+   background-color: #0056b3;
+}
+
+/* Expense list styling */
+.listclass {
+   width: 90%;
+   margin-top: 2rem;
+   border: 1px solid #a0aab5;
+   border-radius: 20px;
+   overflow: hidden;
+   height: 35rem;
+   padding: 1rem;
+   background-color: rgba(255, 255, 255, 0.8);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.listclass::-webkit-scrollbar {
+   display: none;
+}
+
+.expense-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+/* Each expense item styling */
+.expense-list li {
+   background-color: rgba(184, 183, 180, 0.7);
+   padding: 15px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: row;  /* Ensure items are laid out in a row */
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   font-size: 1.1rem;
+   color: #333;  /* Darker text for better readability */
+}
+
+/* Expense item description */
+.expense-list li p {
+   font-weight: bold;
+   margin: 5px 0;
+   flex: 1;  /* Ensure text takes available space */
+   padding-right: 40px; /* Add some padding to the right to make room for the icon */
+   text-overflow: ellipsis;  /* Prevent overflow of long text */
+   white-space: nowrap; /* Keep the text in a single line */
+   overflow: hidden; /* Hide text overflow */
+}
+
+.expense-list li .ebtn {
+   cursor: pointer;
+   position: absolute;
+   right: 10px; /* Ensure there is space from the edge */
+   top: 50%;
+   transform: translateY(-50%); /* Center the icon vertically */
+   color: #007bff;
+   transition: color 0.3s ease;
+}
+
+.expense-list li .ebtn:hover {
+   color: #0056b3;
+}
+
+/* Download section */
+.downDIV {
+   margin-top: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.downloadBTN {
+   padding: 12px 20px;
+   font-size: 1.2rem;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.downloadBTN:hover {
+   background-color: #0056b3;
+}
+
+h6 {
+   font-size: 1.1rem;
+   margin-right: 1rem;
+   color: #333;  /* Darker text for better visibility */
+}
+
+/* No expenses found styling */
+.no-expenses {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: #ff3b3f;
+   text-align: center;
+   margin-top: 2rem;
+}
+
+
+
+
+/* .expensemain {
+   background-image: url("exp9.jpg");
+   background-size: cover;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.expHead{
+   margin:15px;
+   padding:1rem;
+   background-color: #878684a1;
+   border-radius: 5px;
+   font-weight: bolder;
+}
+
+.popform {
+   
+   margin-top: 3rem;
+   width: 80%; 
+   max-width: 50rem;
+   
+   border: #abbcce solid;
+   padding: 2rem;
+   background-color: #abbcce8f;
+   border-radius: 13px;
+}
+
+.listclass {
+   
+
+   width: 90%; 
+   margin-top: 2rem;
+   border: #a0aab5 solid;
+   border-radius: 20px;
+   overflow: scroll;
+   height: 35rem;
+}
+.listclass::-webkit-scrollbar {
+   display: none;
+}
+
+.popform label {
+   display: block;
+   margin-bottom: 6px;
+}
+
+.popform input,
+.popform select {
+   width: calc(100% - 16px); 
+   padding: 8px;
+   margin-bottom: 5px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+
+.popform button {
+   width: calc(100% - 16px);
+   padding: 5px;
+   border: none;
+   border-radius: 5px;
+   background-color: #007bff;
+   color: #fff;
+   cursor: pointer;
+}
+
+.popform button:hover {
+   background-color: #0056b3;
+}
+
+.expense-list .ebtn {
+   cursor: pointer;
+   
+   right: 5%;
+}
+
+.dbtn {
+   cursor: pointer;
+   position: absolute;
+   right: 40%;
+}
+
+.totalexpense {
+   position: relative;
+   left: 40%;
+}
+
+.expense-list {
+   list-style: none;
+   padding: 0;
+   margin: 20px 0;
+}
+
+.expense-list li {
+   background-color: #b8b7b4a3;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+
+   margin: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.expense-list li p {
+   font-weight: bold;
+   
+}
+
+.ebtn:hover {
+   background-color: rgb(234, 234, 244);
+}
+
+.downDIV{
+   margin-top: 5rem;
+   display:flex;
+   justify-content: space-around;
+}
+.downloadBTN{
+   margin-left: 2rem;
+} */

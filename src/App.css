@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-style: italic;
+  font-family: "Times New Roman";
+  font-weight: bolder;
+  font-size: 0.5in;
+}
+
+.App-NavLink {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+     transform: rotate(0deg);
+  }
+  to {
+     transform: rotate(360deg);
+  }
+}
+.rightone {
+  border: 1px solid black;
+  width: 50vh;
+  height: 100px;
+  position: relative;
+  left: 1000px;
+  top: 100px;
+}
+.leftone {
+  /* background-image: url(./air-jordan-1-sneaker-freaker.jpg); */
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  /* right:500px; */
+  top: 100px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.app-container.dark {
+  background-color: #000000;
+  color: #fff;
+  background-image: none;
+}
+
+/* src/App.css......................... */
+
+/* Light Theme Styles */
+.app-container.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark Theme Styles */
+.app-container.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar Styles */
+.navbar.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar.dark .nav-link {
+  color: #fff;
+}
+
+.navbar.dark .nav-link:hover {
+  color: #ccc;
+}
+
+/* Footer Styles */
+.footer.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* General Element Styles for Dark Theme */
+.dark button,
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark button:hover,
+.dark input:hover,
+.dark textarea:hover,
+.dark select:hover {
+  background-color: #555;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.dark a:hover {
+  color: #ccc;
+}
+.dark .background-image {
+  background-image: none;
+  background-color: #070711; /* Ensure the background is black */
+}
+.dark .background-image-footer {
+  background-image: none;
+  background-color: #000000; /* Ensure the background is black */
+}
+
+/* Add this to your global styles or App.css */
+body {
+  padding-top: 65px;/* Adjust based on your navbar height */
+}

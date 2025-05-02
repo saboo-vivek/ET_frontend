@@ -1,0 +1,332 @@
+/* .homebody {
+   background-image: url("exp44.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden; 
+   
+} */
+
+.homebody {
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.homebody::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-image: url("exp3.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   filter: blur(3px); 
+   z-index: -1;
+}
+
+
+.curr {
+   color: white !important;
+   text-decoration: none;
+}
+.card1,
+.card2 {
+   background-color: rgba(
+      120,
+      91,
+      91,
+      0.8
+   ) !important; 
+   border-radius: 10px;
+   padding: 20px;
+}
+
+#spanid {
+   position: absolute;
+   right: 150px;
+   top: 18px;
+}
+
+h1 {
+   text-align: center;
+   margin-top: 60px;
+   color: #1b4a78;
+}
+
+#formId {
+   max-width: 600px;
+   min-width: 400px;
+   width: 100%;
+   margin: 20px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   
+   background-color: rgba(116, 183, 225, 0.9);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#formId h2 {
+   font-weight: bold;
+   padding: 10px;
+   text-align: center;
+   color: #01012b;
+}
+
+#formId input,
+#formId select {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.formId-button {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #0949c0;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+   margin-top: 3%;
+}
+
+.formId-button:hover {
+   background-color: #000589;
+}
+
+#rzp-button {
+   width: 20%;
+   height: 50px;
+   padding: 10px;
+
+   border: none;
+
+   border-radius: 18px;
+   background-color: #2b7bc5;
+   color: #fff;
+   font-size: 12px;
+   cursor: pointer;
+   margin-top: 3%;
+}
+
+#rzp-button:hover {
+   background-color: blue;
+}
+/* ***************************************************************** */
+
+#expenses {
+   /* border:2px solid grey; */
+   width: 50%;
+   padding: 20px;
+
+   border-radius: 10px;
+   /* margin-top: 50px; */
+}
+
+#expenses h2 {
+   text-align: center;
+}
+
+
+
+/* ************************************************** */
+/* leaderboard button */
+.leaderboard-button {
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #2aa15f;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.leaderboard-button:hover {
+   background-color: #1f7a46;
+}
+
+/* ***************leaderboarddiv************* */
+
+/* Leaderboard List */
+#leader {
+   width: 50%;
+   text-align: center;
+}
+
+#leader ul {
+   list-style: none;
+   padding: 0;
+   font-size: large;
+   margin: 20px 0;
+   text-align: center;
+}
+
+#leader li {
+   background-color: #f7f7f7;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   /* display: flex; */
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+#downloadexpense {
+   width: 150px;
+   height: 40px;
+   background-color: blue;
+   color: #ffffff;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#downloadexpense:hover {
+   background-color: blueviolet;
+}
+
+/* **************************************************** */
+#fileurllist {
+   margin-top: 20px;
+   width: 50%;
+   text-align: center;
+}
+
+#fileurllist h3 {
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 24px;
+   color: rgb(30, 30, 71);
+}
+
+#fileurllist ul {
+   list-style: none;
+   padding: 0;
+   font-size: large;
+   margin: 20px 0;
+   text-align: center;
+}
+
+#fileurllist li {
+   background-color: #f7f7f7;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   /* display: flex; */
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+#paginationButton button {
+   margin-bottom: 10px;
+   /* border:1px solid black; */
+}
+
+#yyy {
+   margin-top: 20px;
+   font-size: larger;
+}
+
+#ExpensePerPage {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#ExpensePerPage select {
+   width: 70%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   text-align: center;
+   margin-top: 20px;
+}
+
+#ExpensePerPage button {
+   margin-left: 10px;
+   /* width: 30%; */
+   padding: 10px;
+   border: none;
+   height: 10%;
+   border-radius: 5px;
+   background-color: #2b7bc5;
+   color: #fff;
+   font-size: 12px;
+   cursor: pointer;
+   margin-top: 3%;
+}
+
+#ExpensePerPage button:hover {
+   background-color: #5899d6;
+}
+.boot {
+   width: 100%;
+   background-color: #1b4a78;
+}
+#premium {
+   margin: auto;
+   /* float:right; */
+   position: fixed;
+   left: 1410px;
+}
+#addExpense {
+   background-color: #ff0000 !important;
+}
+#expdone {
+   /* border:2px solid rgb(89, 113, 89); */
+   /* width:20px; */
+   color: #e6bebe;
+}
+.viewbutton {
+   background-color: black;
+}
+
+
+.middle {
+   text-align: center;
+}
+.navlinks {
+   gap: 20px;
+}
+.alertclass {
+   position: fixed;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: flex;
+   justify-content: center;
+   width: fit-content;
+}
+

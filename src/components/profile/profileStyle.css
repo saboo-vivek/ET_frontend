@@ -1,0 +1,68 @@
+/* PortalForm.css */
+
+.portal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (last value) as needed */
+        z-index: 999; /* Ensure the overlay is on top of other content */
+      }
+      
+      .portal-form-container {
+              position: fixed;
+              top: 40%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #222336;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              z-index: 1000;
+              min-width:300px;
+            }
+            
+            .portal-form-container form {
+              display: flex;
+              flex-direction: column;
+            }
+            
+            .portal-form-container label {
+              margin-bottom: 10px;
+              font-size: 20px;
+            }
+            
+            .portal-form-container input {
+              padding: 8px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              font-size: 16px;
+            }
+            
+            .portal-form-container button {
+              padding: 10px 20px;
+              margin-top: 10px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            
+            .portal-form-container button[type="submit"] {
+              background-color: #007bff;
+              color: #fff;
+            }
+            
+            .portal-form-container button[type="submit"]:hover {
+              background-color: #0056b3;
+            }
+            
+            .portal-form-container button[type="button"] {
+              background-color: #cfcfcf;
+              color: #050505;
+            }
+            
+            .portal-form-container button[type="button"]:hover {
+              background-color: #b3b3b3;
+            }
+            
