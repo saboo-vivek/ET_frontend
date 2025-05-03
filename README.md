@@ -20,7 +20,7 @@
 ## 🖥️ Screenshots
 | Login | Dashboard | Premium |
 |-------|-----------|---------|
-| ![Login](https://i.imgur.com/login.png) | ![Dashboard](https://i.imgur.com/dash.png) | ![Premium](https://i.imgur.com/premium.png) |
+| ![Login](https://github.com/saboo-vivek/ET_frontend/blob/main/screenshot/login.png) | ![Dashboard](https://github.com/saboo-vivek/ET_frontend/blob/main/screenshot/dash.png) | ![Premium](https://github.com/saboo-vivek/ET_frontend/blob/main/screenshot/pay1.png) |
 
 ## 🔗 Backend Integration
 Connected to:  
