@@ -133,4 +133,7 @@ body.dark {
 /* Add this to your global styles or App.css */
 body {
   padding-top: 65px;/* Adjust based on your navbar height */
+  background-color: #0000FF; /* Blue background */
+  margin: 0; /* Remove default margin */
+  
 }

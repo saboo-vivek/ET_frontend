@@ -15,7 +15,7 @@ export default function AllExpenses() {
    const [description, setDescription] = useState("");
    const [category, setCategory] = useState("");
    const [idValue, setIdValue] = useState("");
-   const token = localStorage.getItem("token");
+   const token = sessionStorage.getItem("token");
    const BASE_URL = process.env.REACT_APP_BACKEND_API;
 
    useEffect(() => {

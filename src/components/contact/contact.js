@@ -8,7 +8,7 @@ const ContactUs = () => {
       phone: "",
       message: "",
    });
-   const token = localStorage.getItem("token");
+   const token = sessionStorage.getItem("token");
    const BASE_URL = process.env.REACT_APP_BACKEND_API;
 
    const handleChange = (e) => {

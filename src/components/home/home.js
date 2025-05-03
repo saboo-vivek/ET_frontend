@@ -1,5 +1,5 @@
 import "./home.css";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Alert } from "react-bootstrap";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
@@ -29,9 +29,24 @@ const Home = () => {
       }));
    };
 
-   const token = localStorage.getItem("token");
-
+   const token = sessionStorage.getItem("token");
    const BASE_URL = process.env.REACT_APP_BACKEND_API;
+
+   const parseJwt = (token) => {
+      try {
+        return JSON.parse(atob(token.split(".")[1]));
+      } catch (e) {
+        return null;
+      }
+    };
+   const decodeToken = parseJwt(token);
+   
+
+
+   useEffect(() => {
+         console.log("Home",'decodeToken',decodeToken)
+      }, []);
+
 
    const handleAddExpense = async (e) => {
       e.preventDefault();

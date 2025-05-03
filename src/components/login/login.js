@@ -29,10 +29,11 @@ export default function Login() {
 
          dispatch(loadingApi());
          let response = await axios.post(`${BASE_URL}/login`, obj);
+         console.log('response',response)
          alert(response.data.message);
 
          const { token } = response.data;
-         localStorage.setItem("token", token);
+         sessionStorage.setItem("token", token);
 
          console.log("loading in login Page before:", loading);
          console.log("loginSuccess(token)")
@@ -41,7 +42,11 @@ export default function Login() {
          navigate("/home");
       } catch (error) {
          if (error.response) {
+            console.log("error.response.data.error",error.response.data.error)
+            console.log("error.response.data",error.response.data)
+            console.log("error.response",error.response)
             alert(error.response.data.error);
+            dispatch(loginFailure(error.response.data));
          } else {
             alert("An unexpected error occurred. Please try again later.");
             dispatch(loginFailure(error.response.data));
@@ -114,6 +119,12 @@ export default function Login() {
                                  >
                                     Create a new Account
                                  </button>
+                                 {/* Adding Admin Note */}
+                                 <div className="admin-note">
+                                   <p><strong>Admin Test Credentials:</strong></p>
+                                   <p>Email: admin@gmail.com</p>
+                                   <p>Password: admin123</p>
+                                 </div>
                               </div>
                            </form>
                         )}

@@ -24,7 +24,7 @@ import { useThemeContext } from "./components/reduxComp/ThemeContext";
 
 
 const AppContent = () => {
-   const token = localStorage.getItem("token");
+   const token = sessionStorage.getItem("token");
    const location = useLocation();
    const { theme } = useThemeContext();
 

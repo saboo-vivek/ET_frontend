@@ -2,8 +2,8 @@
 import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT,LOADING} from "./actions";
 
 const initialState = {
-   token: localStorage.getItem("token") || null,
-   isAuthenticated: !!localStorage.getItem("token"),
+   token: sessionStorage.getItem("token") || null,
+   isAuthenticated: !!sessionStorage.getItem("token"),
    error: null,
    loading:false
 };

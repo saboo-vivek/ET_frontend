@@ -17,12 +17,12 @@
 //    const { theme, toggleTheme } = useThemeContext();
 
 //    const handleLogout = () => {
-//       localStorage.removeItem("token");
+//       sessionStorage.removeItem("token");
 //       dispatch(logout());
 //       navigate("/signup");
 //    };
 
-//    const token = localStorage.getItem("token");
+//    const token = sessionStorage.getItem("token");
 //    const parseJwt = (token) => {
 //       try {
 //          return JSON.parse(atob(token.split(".")[1]));
@@ -101,12 +101,12 @@ const MyNavbar = () => {
    const { theme, toggleTheme } = useThemeContext();
 
    const handleLogout = () => {
-      localStorage.removeItem("token");
+      sessionStorage.removeItem("token");
       dispatch(logout());
       navigate("/signup");
    };
 
-   const token = localStorage.getItem("token");
+   const token = sessionStorage.getItem("token");
    const parseJwt = (token) => {
       try {
          return JSON.parse(atob(token.split(".")[1]));

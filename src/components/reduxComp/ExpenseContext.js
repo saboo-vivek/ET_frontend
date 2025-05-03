@@ -6,7 +6,7 @@
 // export const useExpenseContext = () => useContext(ExpenseContext);
 
 // export const ExpenseProvider = ({ children }) => {
-//    const token = localStorage.getItem("token");
+//    const token = sessionStorage.getItem("token");
 
 //    const parseJwt = (token) => {
 //       try {
@@ -97,7 +97,7 @@
 
 //          if (response.data.success) {
 //             alert("You are a premium user");
-//             localStorage.setItem("token", response.data.token);
+//             sessionStorage.setItem("token", response.data.token);
 //          } else {
 //             alert("Transaction failed");
 //          }
@@ -152,7 +152,7 @@ const ExpenseContext = createContext();
 export const useExpenseContext = () => useContext(ExpenseContext);
 
 export const ExpenseProvider = ({ children }) => {
-  const token = localStorage.getItem("token");
+  const token = sessionStorage.getItem("token");
 
   const parseJwt = (token) => {
     try {
@@ -189,6 +189,7 @@ export const ExpenseProvider = ({ children }) => {
 
   const handlePremium = async () => {
     try {
+      console.log("handlePremium called",'decoded token',decodeToken)
       // Step 1: Get payment session ID from backend
       const response = await axios.get(`${BASE_URL}/purchase/premium`, {
         headers: { Authorization: token },
@@ -238,7 +239,7 @@ export const ExpenseProvider = ({ children }) => {
 
       if (response.data.success) {
         alert("Payment successful! You are now a premium user.");
-        localStorage.setItem("token", response.data.token);
+        sessionStorage.setItem("token", response.data.token);
         window.location.reload(); // Refresh to reflect premium status
       } else {
         alert("Payment verification failed. Please contact support.");
